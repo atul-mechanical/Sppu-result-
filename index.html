@@ -14,18 +14,43 @@
 
     <input type="text" id="prn" placeholder="Enter PRN / Application Number">
     <button onclick="checkResult()">Search Result</button>
-
+    
     <div id="result" style="display:none;">
-        <hr>
-        <h2>ATUL BAPU GANGURDE</h2>
-        <p><b>PRN:</b> 72240563E</p>
-        <p><b>Seat No:</b> B400410087</p>
-        <p><b>College:</b> Brahma Valley College of Engineering</p>
-        <p><b>SGPA:</b> 9.40</p>
-        <p><b>CGPA:</b> 8.90</p>
+<hr>
 
-        <button onclick="window.print()">Print Result</button>
-    </div>
+<h2 id="studentName"></h2>
+
+<p><b>PRN:</b> <span id="studentPRN"></span></p>
+<p><b>Seat No:</b> <span id="seatNo"></span></p>
+<p><b>College:</b> <span id="college"></span></p>
+<p><b>Course:</b> <span id="course"></span></p>
+<p><b>Semester:</b> <span id="semester"></span></p>
+
+<table border="1">
+<tr>
+<th>Subject</th>
+<th>Marks</th>
+<th>Grade</th>
+</tr>
+
+<tr>
+<td>Thermodynamics</td>
+<td>85</td>
+<td>A+</td>
+</tr>
+
+<tr>
+<td>Machine Design</td>
+<td>90</td>
+<td>O</td>
+</tr>
+
+</table>
+
+<p><b>SGPA:</b> <span id="sgpa"></span></p>
+<p><b>CGPA:</b> <span id="cgpa"></span></p>
+
+<button onclick="window.print()">Print Result</button>
 
 </div>
 

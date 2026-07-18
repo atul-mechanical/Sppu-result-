@@ -109,3 +109,40 @@ table{
 }
 
 }
+
+table{
+    width:100%;
+    table-layout: fixed;
+}
+
+th, td{
+    padding:8px;
+    font-size:14px;
+    word-wrap:break-word;
+}
+
+th:nth-child(1){
+    width:15%;
+}
+
+th:nth-child(2){
+    width:35%;
+}
+
+th:nth-child(3),
+th:nth-child(4),
+th:nth-child(5){
+    width:16%;
+}
+
+@media(max-width:600px){
+
+table{
+    font-size:11px;
+}
+
+th, td{
+    padding:5px;
+}
+
+}

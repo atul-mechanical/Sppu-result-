@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPPU Result Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>SAVITRIBAI PHULE PUNE UNIVERSITY</h1>
+    <h3>Online Result System</h3>
+
+    <input type="text" id="prn" placeholder="Enter PRN / Application Number">
+    <button onclick="checkResult()">Search Result</button>
+
+    <div id="result" style="display:none;">
+        <hr>
+        <h2>ATUL BAPU GANGURDE</h2>
+        <p><b>PRN:</b> 72240563E</p>
+        <p><b>Seat No:</b> B400410087</p>
+        <p><b>College:</b> Brahma Valley College of Engineering</p>
+        <p><b>SGPA:</b> 9.40</p>
+        <p><b>CGPA:</b> 8.90</p>
+
+        <button onclick="window.print()">Print Result</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

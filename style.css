@@ -146,3 +146,30 @@ th, td{
 }
 
 }
+
+@media print {
+
+input,
+button {
+    display:none;
+}
+
+body{
+    background:white;
+}
+
+.container{
+    box-shadow:none;
+    border:none;
+    width:100%;
+}
+
+h1{
+    font-size:22px;
+}
+
+table{
+    width:100%;
+}
+
+}

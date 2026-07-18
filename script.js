@@ -11,7 +11,7 @@ studentPRN.innerHTML="72240563E";
 seatNo.innerHTML="B400410087";
 college.innerHTML="Brahma Valley College of Engineering";
 course.innerHTML="Mechanical Engineering";
-semester.innerHTML="Semester VI";
+semester.innerHTML="Semester VII<br>Semester VIII";
 sgpa.innerHTML="9.40";
 cgpa.innerHTML="8.90";
 

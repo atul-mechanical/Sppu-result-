@@ -3,32 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>SPPU Result Portal</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
 <div class="container">
-    <h1>SAVITRIBAI PHULE PUNE UNIVERSITY</h1>
-    <h3>Online Result System</h3>
 
-    <input type="text" id="prn" placeholder="Enter PRN / Application Number">
-    <button onclick="checkResult()">Search Result</button>
-    
-    <div id="result" style="display:none;">
+<h1>SAVITRIBAI PHULE PUNE UNIVERSITY</h1>
+<h3>STATEMENT OF MARKS</h3>
+
+<hr>
+
+<input type="text" id="prn" placeholder="Enter PRN / Application Number">
+
+<button onclick="checkResult()">Search Result</button>
+
+
+<div id="result" style="display:none;">
+
 <hr>
 
 <h2 id="studentName"></h2>
 
-<p><b>PRN:</b> <span id="studentPRN"></span></p>
-<p><b>Seat No:</b> <span id="seatNo"></span></p>
-<p><b>College:</b> <span id="college"></span></p>
-<p><b>Course:</b> <span id="course"></span></p>
-<p><b>Semester:</b> <span id="semester"></span></p>
+
+<table>
+
+<tr>
+<th colspan="2">Student Information</th>
+</tr>
+
+<tr>
+<td>PRN Number</td>
+<td id="studentPRN"></td>
+</tr>
+
+<tr>
+<td>Seat Number</td>
+<td id="seatNo"></td>
+</tr>
+
+<tr>
+<td>College</td>
+<td id="college"></td>
+</tr>
+
+<tr>
+<td>Course</td>
+<td id="course"></td>
+</tr>
+
+<tr>
+<td>Semester</td>
+<td id="semester"></td>
+</tr>
+
+</table>
+
 
 <h3>Subject Details</h3>
 
-<table border="1">
+
+<table>
+
 <tr>
 <th>Subject</th>
 <th>Marks</th>
@@ -49,12 +90,42 @@
 
 </table>
 
-<p><b>SGPA:</b> <span id="sgpa"></span></p>
-<p><b>CGPA:</b> <span id="cgpa"></span></p>
+
+<br>
+
+
+<table>
+
+<tr>
+<th>Result Summary</th>
+<th>Details</th>
+</tr>
+
+<tr>
+<td>SGPA</td>
+<td id="sgpa"></td>
+</tr>
+
+<tr>
+<td>CGPA</td>
+<td id="cgpa"></td>
+</tr>
+
+<tr>
+<td>Status</td>
+<td>PASS</td>
+</tr>
+
+</table>
+
 
 <button onclick="window.print()">Print Result</button>
 
+
 </div>
+
+</div>
+
 
 <script src="script.js"></script>
 
